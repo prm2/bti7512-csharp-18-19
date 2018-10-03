@@ -16,10 +16,27 @@ namespace CSharpIntroExamples
 
     class Program
     {
-        class Pos
+        interface I3rdDimension
+        {
+            int Z { get; set; }
+        }
+
+        class Pos : I3rdDimension
         {
             public int X { get; set; }
             public int Y { get; set; }
+            public int Z { get; set; }
+        }
+
+        static void Mirror(Pos p)
+        {
+            p.X = -p.X;
+            p.Y = -p.Y;
+        }
+
+        static void Mirror3rdDim(I3rdDimension v)
+        {
+            v.Z = -v.Z;
         }
 
         class MyClass
@@ -63,6 +80,9 @@ namespace CSharpIntroExamples
 
             MyClass c = new MyClass();
 
+            // see what happens if you uncomment the following line
+            //c.Counter = 100;
+
             try
             {
                 c.Counter++;
@@ -83,15 +103,25 @@ namespace CSharpIntroExamples
 
             int i = (int)o;
 
+            i = i + 17; // does not affect the value in 'o'
+
+            Console.WriteLine("o = " + o);
+
             Console.WriteLine();
             // -----------
 
             // untyped variables?
 
-            var j = 17;               
-            var s = "Hello World !";  
+            var j = 17;                 // implicit typing: int
+            var s = "Hello World !";    // implicit typing: string 
 
+            Console.WriteLine("j is " + j.GetType().Name);
+            Console.WriteLine("s is " + s.GetType().Name);
+
+            // anonymous type
             var x = new { Name = "Muster", Firstname = "Hans" };
+
+            Console.WriteLine("x is " + x.GetType().Name);
 
             Console.WriteLine("{0} {1} {2}", j, s, x);
 
@@ -103,6 +133,8 @@ namespace CSharpIntroExamples
             s = "Test";
             s = s.ToUpper();
 
+            // is true because the string type overwrites the == operator
+            // and effectively calls the .Equals method
             Console.WriteLine(s == "TEST");
 
             Console.WriteLine();
@@ -115,22 +147,27 @@ namespace CSharpIntroExamples
 
             int m = c.Minimum<int>(a, b);
 
-            Console.WriteLine("m={0}", m);
-
             Console.WriteLine();
             // -----------
 
             // An array indexed with strings and datetime values?
             // And how large is this array?
 
-            for (i = 0; i < 20; i++)
+            for (i = 0; i < 2; i++)
                 Console.WriteLine(c["test", DateTime.Now]);
 
+            // Example: Dictionary uses the indexer to get a value by key
+            Dictionary<int, string> dict = new Dictionary<int, string>();
+            dict.Add(5, "Fuenf");
+
+            s = dict[5];
             Console.WriteLine();
+
             // -----------
 
             // What is the value of the variable pos1?
 
+            // observe the difference when Pos is declared as a class vs struct
             Pos pos1 = new Pos { X = 5, Y = 8 };
             Pos pos2 = pos1;
             pos2.X *= 2;
@@ -138,6 +175,27 @@ namespace CSharpIntroExamples
 
             Console.WriteLine("pos1={0},{1}  pos2={2},{3}",
                 pos1.X, pos1.Y, pos2.X, pos2.Y);
+
+            Mirror(pos1);
+            Console.WriteLine("pos1={0},{1}  pos2={2},{3}",
+                pos1.X, pos1.Y, pos2.X, pos2.Y);
+
+            pos1.Z = 99;
+            Console.WriteLine("pos1={0},{1},{2}", pos1.X, pos1.Y, pos1.Z);
+            Mirror3rdDim(pos1);
+            Console.WriteLine("pos1={0},{1},{2}", pos1.X, pos1.Y, pos1.Z);
+
+            // with class:
+            //   pos1 = 5,8  pos2 = 10,16
+            //   pos1 = 5,8  pos2 = 10,16
+            //   pos1 = 5,8,99
+            //   pos1 = 5,8,99
+
+            // with struct:
+            //   pos1 = 10,16  pos2 = 10,16
+            //   pos1 = -10,-16  pos2 = -10,-16
+            //   pos1 = -10,-16,99
+            //   pos1 = -10,-16,-99
 
             Console.WriteLine();
             // -----------

@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIntroExamples", "CSharpIntroExamples\CSharpIntroExamples.csproj", "{BC4D313D-7D06-4907-B268-F5692AC090C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesAndInheritance", "ClassesAndInheritance\ClassesAndInheritance.csproj", "{9C8AC6B3-E33D-4D8F-872C-D999D34BDD7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{FF0D2637-F8C2-463F-9F2E-A3866526F9C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{253C09A5-0433-4780-ABF4-AAD83F6709ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodVirtualization", "MethodVirtualization\MethodVirtualization.csproj", "{A0A6B87E-F1B8-4EDD-B7C7-954D9A8101A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullableT", "NullableT\NullableT.csproj", "{9E846897-79D4-4565-83A7-52CA4CC3CE3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Properties", "Properties\Properties.csproj", "{310287CC-9FF8-40A0-B080-F92C68306FFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC4D313D-7D06-4907-B268-F5692AC090C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC4D313D-7D06-4907-B268-F5692AC090C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC4D313D-7D06-4907-B268-F5692AC090C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC4D313D-7D06-4907-B268-F5692AC090C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C8AC6B3-E33D-4D8F-872C-D999D34BDD7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C8AC6B3-E33D-4D8F-872C-D999D34BDD7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C8AC6B3-E33D-4D8F-872C-D999D34BDD7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C8AC6B3-E33D-4D8F-872C-D999D34BDD7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF0D2637-F8C2-463F-9F2E-A3866526F9C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF0D2637-F8C2-463F-9F2E-A3866526F9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF0D2637-F8C2-463F-9F2E-A3866526F9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF0D2637-F8C2-463F-9F2E-A3866526F9C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{253C09A5-0433-4780-ABF4-AAD83F6709ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253C09A5-0433-4780-ABF4-AAD83F6709ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253C09A5-0433-4780-ABF4-AAD83F6709ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{253C09A5-0433-4780-ABF4-AAD83F6709ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0A6B87E-F1B8-4EDD-B7C7-954D9A8101A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A6B87E-F1B8-4EDD-B7C7-954D9A8101A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A6B87E-F1B8-4EDD-B7C7-954D9A8101A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A6B87E-F1B8-4EDD-B7C7-954D9A8101A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E846897-79D4-4565-83A7-52CA4CC3CE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E846897-79D4-4565-83A7-52CA4CC3CE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E846897-79D4-4565-83A7-52CA4CC3CE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E846897-79D4-4565-83A7-52CA4CC3CE3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{310287CC-9FF8-40A0-B080-F92C68306FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310287CC-9FF8-40A0-B080-F92C68306FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310287CC-9FF8-40A0-B080-F92C68306FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310287CC-9FF8-40A0-B080-F92C68306FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF38C8BF-EEA6-4917-ADF9-1301B8213658}
+	EndGlobalSection
+EndGlobal
