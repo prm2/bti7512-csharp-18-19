@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExPixels", "ExPixels\ExPixels.csproj", "{58B0F293-2622-4F23-9B64-A2FCA365C724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExPixelsStructImmutable", "ExPixelsStructImmutable\ExPixelsStructImmutable.csproj", "{94756094-1154-49C9-A723-A4AE963F3299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExPixelsStructMutable", "ExPixelsStructMutable\ExPixelsStructMutable.csproj", "{EB73A108-BD09-4292-8E08-EA5E22CAADF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExPixelsClassMutable", "ExPixelsClassMutable\ExPixelsClassMutable.csproj", "{E5DA70A4-8AB9-44CE-8AAF-08BB780AD95B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExPixelsClassImmutable", "ExPixelsClassImmutable\ExPixelsClassImmutable.csproj", "{862F7C0B-21AF-4EA1-99CF-ED808950DC58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58B0F293-2622-4F23-9B64-A2FCA365C724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58B0F293-2622-4F23-9B64-A2FCA365C724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58B0F293-2622-4F23-9B64-A2FCA365C724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58B0F293-2622-4F23-9B64-A2FCA365C724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94756094-1154-49C9-A723-A4AE963F3299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94756094-1154-49C9-A723-A4AE963F3299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94756094-1154-49C9-A723-A4AE963F3299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94756094-1154-49C9-A723-A4AE963F3299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB73A108-BD09-4292-8E08-EA5E22CAADF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB73A108-BD09-4292-8E08-EA5E22CAADF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB73A108-BD09-4292-8E08-EA5E22CAADF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB73A108-BD09-4292-8E08-EA5E22CAADF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5DA70A4-8AB9-44CE-8AAF-08BB780AD95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5DA70A4-8AB9-44CE-8AAF-08BB780AD95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5DA70A4-8AB9-44CE-8AAF-08BB780AD95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5DA70A4-8AB9-44CE-8AAF-08BB780AD95B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{862F7C0B-21AF-4EA1-99CF-ED808950DC58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{862F7C0B-21AF-4EA1-99CF-ED808950DC58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{862F7C0B-21AF-4EA1-99CF-ED808950DC58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{862F7C0B-21AF-4EA1-99CF-ED808950DC58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
