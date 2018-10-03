@@ -46,6 +46,9 @@ namespace CH.BFH.CSharpIntro
             TimeSpan ts = time.Elapsed;
             Console.WriteLine($"Image created; time elapsed {ts.Minutes:00}:{ts.Seconds:00}:{ts.Milliseconds:00}");
 
+            time.Reset();
+            time.Start();
+
             ToGray(img);
 
             time.Stop();
