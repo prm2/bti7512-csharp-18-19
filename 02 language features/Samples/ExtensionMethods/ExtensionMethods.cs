@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using BFH.Prm1.Extensions1;
+using BFH.Prm1.Extensions2;
 
 namespace BFH.Prm1.ExtensionMethods
 {
