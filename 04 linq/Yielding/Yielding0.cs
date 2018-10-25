@@ -9,14 +9,6 @@ namespace Yielding
 {
     class Yielding
     {
-        static IEnumerable<int> Even(int[] numbers)
-        {
-            foreach (var i in numbers)
-                if (i % 2 == 0)
-                    yield return i;
-
-        }
-
         static int lineNb = 0;
         static IEnumerable<string> DynamicStrings()
         {
@@ -28,6 +20,15 @@ namespace Yielding
             yield return $"  Line {lineNb}; no more will follow!";
 
             yield return "END";
+        }
+
+        static IEnumerable<int> Even(int[] numbers)
+        {
+            Console.WriteLine("starting Even method");
+            foreach (var i in numbers)
+                if (i % 2 == 0)
+                    yield return i;
+            Console.WriteLine("ending Even method");
         }
 
         static void Main(string[] args)
