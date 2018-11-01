@@ -1,0 +1,30 @@
+﻿@model IEnumerable<GroupingWeb.Models.Person>
+
+@{
+    ViewBag.Title = "Char";
+}
+
+<div>
+    @for(var ch = 'A'; ch <= 'Z'; ch++)
+    {
+        @Html.ActionLink(ch.ToString(), "Char", new { Id = ch } )
+        <span>&nbsp; &nbsp;</span>
+    }
+</div>
+
+<h2>@ViewBag.Char</h2>
+
+@if (Model != null)
+{
+    foreach (var p in Model)
+    {
+        <p>@p.Name @p.Firstname (@p.Birthdate)</p>
+    }
+}
+
+<div>
+    <p>&nbsp;</p>
+    <hr/>
+    <pre>@ViewBag.DBLog</pre>
+</div>
+

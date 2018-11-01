@@ -1,0 +1,23 @@
+﻿@model IEnumerable<GroupingWeb.Models.Person>
+
+@{
+    ViewBag.Title = "Paged";
+}
+
+<h2>@ViewBag.Page / @ViewBag.NbOfPages &nbsp; @Html.ActionLink("next", "Page", new { id = (int)ViewBag.Page + 1 })</h2>
+
+@if (Model != null)
+{
+    foreach (var p in Model)
+    {
+        <p>@p.Name @p.Firstname (@p.Birthdate)</p>
+    }
+}
+
+<div>
+    <p>&nbsp;</p>
+    <hr />
+    <pre>@ViewBag.DBLog</pre>
+</div>
+
+
