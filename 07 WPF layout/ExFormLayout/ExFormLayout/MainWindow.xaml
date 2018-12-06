@@ -1,0 +1,44 @@
+﻿<Window x:Class="ExFormLayout.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExFormLayout"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Border Margin="10" Padding="20" Background="#22005688" Height="Auto">
+            <Grid x:Name="Form">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="1*" MinWidth="60"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">Name:</TextBlock>
+                <TextBox  Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Margin="10"></TextBox>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Center">Adress:</TextBlock>
+                <TextBox  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Margin="10"></TextBox>
+
+                <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center">ZIP:</TextBlock>
+                <TextBox  Grid.Row="2" Grid.Column="1" Margin="10"></TextBox>
+                <TextBlock Grid.Row="2" Grid.Column="2" VerticalAlignment="Center">City:</TextBlock>
+                <TextBox  Grid.Row="2" Grid.Column="3" Margin="10"></TextBox>
+
+            </Grid>
+        </Border>
+        
+    </Grid>
+</Window>
