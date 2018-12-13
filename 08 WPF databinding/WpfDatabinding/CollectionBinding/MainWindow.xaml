@@ -1,0 +1,24 @@
+﻿<Window x:Class="CollectionBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CollectionBinding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid x:Name="mainGrid">
+        <Grid.Resources>
+            <local:PersonList x:Key="persons" />
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <TextBox x:Name="TbName" Width="300" Margin="5"/>
+            <TextBox x:Name="TbFirstname" Width="300" Margin="5"/>
+            <Button x:Name="BtnAdd" Content="Add" Margin="5" Click="BtnAdd_Click"/>
+        </StackPanel>
+        <ListBox ItemsSource="{StaticResource persons}" DisplayMemberPath="Name" Grid.Row="1"/>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="DataConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataConverter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:BoolToVisibilityConverter x:Key="converter"/>
+    </Window.Resources>
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <CheckBox x:Name="CBShow" FontSize="42" Content="Show" IsChecked="False"/>
+        <Border x:Name="TheBorder" Height="300" Width="300" Background="Yellow" 
+                Visibility="{Binding ElementName=CBShow, Path=IsChecked, 
+                 Converter={StaticResource converter}, Mode=OneWay}"/>
+        <Button x:Name="BtnHide"  Grid.Column="2" Content="Hide" Click="BtnHide_Click"/>
+    </Grid>
+</Window>

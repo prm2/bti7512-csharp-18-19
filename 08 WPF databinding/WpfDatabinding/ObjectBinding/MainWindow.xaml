@@ -1,0 +1,22 @@
+﻿<Window x:Class="ObjectBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ObjectBinding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <local:Person x:Key="person" Name="Peter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="tbName" Text="{Binding Source={StaticResource person}, Path=Name, Mode=TwoWay}" Grid.Row="0" FontSize="42"/>
+        <TextBlock FontSize="42" Text="{Binding Source={StaticResource person}, Path=Name, Mode=OneWay}" Grid.Row="1"/>
+        <TextBox Text="" Grid.Row="2"/>
+    </Grid>
+</Window>
